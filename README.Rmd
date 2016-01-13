@@ -1,0 +1,21 @@
+# Amazon Web Services Bundle Package #
+
+**awspack** is a bundle of all of [the cloudyr project's](http://cloudyr.github.io) packages for Amazon Web Services (AWS). It imports all functions from all of the AWS packages into its own namespace and exports them. If you only want functions from a specific package, load the individual package instead.
+
+## Installation ##
+
+[![CRAN](http://www.r-pkg.org/badges/version/awspack)](http://cran.r-project.org/package=awspack)
+[![Build Status](https://travis-ci.org/cloudyr/awspack.png?branch=master)](https://travis-ci.org/cloudyr/awspack) [![codecov.io](http://codecov.io/github/cloudyr/awspack/coverage.svg?branch=master)](http://codecov.io/github/cloudyr/awspack?branch=master)
+
+This package is not yet on CRAN. To install the latest development version from GitHub, run the following:
+
+```R
+if(!require("devtools")){
+    install.packages("devtools")
+    library("devtools")
+}
+install_github("cloudyr/awspack")
+```
+
+---
+[![cloudyr project logo](http://i.imgur.com/JHS98Y7.png)](https://github.com/cloudyr)

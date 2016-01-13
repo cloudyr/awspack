@@ -1,0 +1,7 @@
+import(aws.signature)
+import(aws.s3)
+import(aws.ec2)
+import(aws.sns)
+import(aws.sqs)
+import(aws.ses)
+exportPattern("^[^\\.]")

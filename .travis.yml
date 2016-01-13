@@ -1,0 +1,23 @@
+language: r
+sudo: required
+r_packages:
+- knitr
+r_github_packages:
+- eddelbuettel/drat
+- cloudyr/aws.s3
+- cloudyr/aws.ec2
+- cloudyr/aws.sns
+- cloudyr/aws.sqs
+- cloudyr/aws.ses
+after_failure:
+  email: 
+    recipients:
+     - thosjleeper@gmail.com
+    on_success: change
+    on_failure: change
+after_success:
+- Rscript -e 'library("covr");codecov()'
+#- test $TRAVIS_PULL_REQUEST == "false" && 
+#  test $TRAVIS_BRANCH == "master" && 
+#  bash knitreadme.sh
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash drat.sh
