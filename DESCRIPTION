@@ -10,5 +10,15 @@ Description: A bundle of all of the cloudyr project's packages for Amazon Web Se
 License: GPL (>= 2)
 URL: https://github.com/cloudyr/awspack
 BugReports: https://github.com/cloudyr/awspack/issues
-Imports: aws.signature, aws.iam, aws.s3, aws.ec2, aws.sns, aws.sqs, aws.ses, aws.glacier
+Imports: 
+    aws.signature, 
+    aws.cloudwatch, 
+    aws.cloudtrail, 
+    aws.iam, 
+    aws.s3, 
+    aws.ec2, 
+    aws.sns, 
+    aws.sqs, 
+    aws.ses, 
+    aws.glacier
 AdditionalRepositories: http://cloudyr.github.io/drat

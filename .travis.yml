@@ -4,6 +4,8 @@ r_packages:
 - knitr
 r_github_packages:
 - eddelbuettel/drat
+- cloudyr/aws.cloudwatch
+- cloudyr/aws.cloudtrail
 - cloudyr/aws.iam
 - cloudyr/aws.s3
 - cloudyr/aws.ec2

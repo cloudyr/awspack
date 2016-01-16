@@ -1,4 +1,6 @@
 import(aws.signature)
+import(aws.cloudwatch)
+import(aws.cloudtrail)
 import(aws.iam)
 import(aws.s3)
 import(aws.ec2)
