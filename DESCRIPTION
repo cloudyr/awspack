@@ -2,15 +2,14 @@ Package: awspack
 Type: Package
 Title: Amazon Web Services Bundle Package
 Version: 0.1.1
-Date: 2016-01-16
+Date: 2016-12-20
 Authors@R: c(person("Thomas J.", "Leeper", role = c("aut", "cre"),
                     email = "thosjleeper@gmail.com"))
-Maintainer: Thomas J. Leeper <thosjleeper@gmail.com>
-Description: A bundle of all of the cloudyr project's packages for Amazon Web Services (AWS). It imports all functions from all of the AWS packages into its own namespace and exports them. If you only want functions from a specific package, load the individual package instead.
+Description: A bundle of all of the cloudyr project's packages for Amazon Web Services (AWS). It depends upon all of the cloudyr project's AWS packages. It is mainly useful for installing the entire suite of packages; more likely than not you will only want to load individual packages one at a time.
 License: GPL (>= 2)
 URL: https://github.com/cloudyr/awspack
 BugReports: https://github.com/cloudyr/awspack/issues
-Imports: 
+Depends: 
     aws.signature, 
     aws.cloudwatch, 
     aws.cloudtrail, 
@@ -20,5 +19,9 @@ Imports:
     aws.sns, 
     aws.sqs, 
     aws.ses, 
-    aws.glacier
+    aws.glacier,
+    aws.polly,
+    aws.alexa,
+    aws.code,
+    aws.ec2metadata
 Additional_repositories: http://cloudyr.github.io/drat

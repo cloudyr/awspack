@@ -1,7 +1,20 @@
 language: r
-sudo: required
+sudo: false
+cache: packages
+matrix:
+  include:
+    - os: linux
+      dist: precise
+      sudo: false
+    - os: linux
+      dist: trusty
+    - os: osx
+      osx_image: xcode8
+    - os: osx
+      osx_image: beta-xcode6.2
 r_packages:
 - knitr
+- covr
 r_github_packages:
 - eddelbuettel/drat
 - cloudyr/aws.cloudwatch
@@ -9,8 +22,6 @@ r_github_packages:
 - cloudyr/aws.iam
 - cloudyr/aws.s3
 - cloudyr/aws.ec2
-- cloudyr/aws.sns
-- cloudyr/aws.sqs
 - cloudyr/aws.ses
 - cloudyr/aws.glacier
 after_failure:
@@ -21,6 +32,7 @@ after_failure:
     on_failure: change
 after_success:
 - Rscript -e 'library("covr");codecov()'
+#- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash knitreadme.sh
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash drat.sh
 env:
   global:
