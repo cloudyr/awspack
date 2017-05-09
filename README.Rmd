@@ -30,8 +30,8 @@ Temporary session tokens are stored in environment variable `AWS_SESSION_TOKEN` 
 ## Installation
 
 [![CRAN](http://www.r-pkg.org/badges/version/awspack)](http://cran.r-project.org/package=awspack)
+![Downloads](https://cranlogs.r-pkg.org/badges/awspack)
 [![Travis Build Status](https://travis-ci.org/cloudyr/awspack.png?branch=master)](https://travis-ci.org/cloudyr/awspack)
-[![Build Status](https://travis-ci.org/cloudyr/awspack.png?branch=master)](https://travis-ci.org/cloudyr/awspack) 
 [![codecov.io](http://codecov.io/github/cloudyr/awspack/coverage.svg?branch=master)](http://codecov.io/github/cloudyr/awspack?branch=master)
 
 This package is not yet on CRAN. To install the latest development version you can install from the cloudyr drat repository:
