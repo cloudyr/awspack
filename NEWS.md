@@ -1,3 +1,7 @@
+# CHANGES TO awspack 0.1.4
+
+* Added **aws.lambda**. (#6)
+
 # CHANGES TO awspack 0.1.3
 
 * Added **aws.iam**. (#2)

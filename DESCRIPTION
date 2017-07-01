@@ -1,7 +1,7 @@
 Package: awspack
 Type: Package
 Title: Amazon Web Services Bundle Package
-Version: 0.1.3
+Version: 0.1.4
 Date: 2017-07-01
 Authors@R: c(person("Thomas J.", "Leeper", role = c("aut", "cre"),
                     email = "thosjleeper@gmail.com"))
@@ -14,6 +14,7 @@ Imports:
     aws.ec2metadata,
     aws.alexa,
     aws.iam,
+    aws.lambda,
     aws.polly,
     aws.s3,
     aws.ses,
