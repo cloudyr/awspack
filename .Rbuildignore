@@ -1,5 +1,6 @@
 .travis.yml
 README.Rmd
+CONTRIBUTING.md
 drat.sh
 knitreadme.sh
 ^.*\.Rproj$
