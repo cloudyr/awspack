@@ -1,3 +1,7 @@
+# CHANGES TO awspack 0.1.6
+
+* Added **aws.cloudtrail**. (#3)
+
 # CHANGES TO awspack 0.1.5
 
 * Export all functions.
