@@ -1,3 +1,7 @@
+# CHANGES TO awspack 0.1.5
+
+* Export all functions.
+
 # CHANGES TO awspack 0.1.4
 
 * Added **aws.lambda**. (#6)
