@@ -1,6 +1,8 @@
 import(aws.signature)
 import(aws.ec2metadata)
 import(aws.alexa)
+import(aws.cloudtrail)
+import(aws.efs)
 import(aws.iam)
 import(aws.lambda)
 import(aws.polly)

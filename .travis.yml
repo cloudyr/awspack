@@ -31,11 +31,12 @@ r_packages:
 r_github_packages:
 - cloudyr/travisci
 - cloudyr/aws.signature
+- cloudyr/aws.alexa
 - cloudyr/aws.cloudwatch
 - cloudyr/aws.cloudtrail
 - cloudyr/aws.ec2
 - cloudyr/aws.ec2metadata
-- cloudyr/aws.alexa
+- cloudyr/aws.efs
 - cloudyr/aws.iam
 - cloudyr/aws.glacier
 - cloudyr/aws.lambda

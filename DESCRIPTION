@@ -1,8 +1,8 @@
 Package: awspack
 Type: Package
 Title: Amazon Web Services Bundle Package
-Version: 0.1.6
-Date: 2017-07-04
+Version: 0.1.7
+Date: 2017-07-06
 Authors@R: c(person("Thomas J.", "Leeper", role = c("aut", "cre"),
                     email = "thosjleeper@gmail.com"))
 Description: A bundle of all of 'cloudyr' project <http://cloudyr.github.io/> packages for Amazon Web Services ('AWS') <https://aws.amazon.com/>. It depends upon all of the 'cloudyr' project's 'AWS' packages. It is mainly useful for installing the entire suite of packages; more likely than not you will only want to load individual packages one at a time.
@@ -14,6 +14,7 @@ Imports:
     aws.ec2metadata,
     aws.alexa,
     aws.cloudtrail,
+    aws.efs,
     aws.iam,
     aws.lambda,
     aws.polly,
