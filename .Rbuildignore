@@ -5,3 +5,4 @@ drat.sh
 knitreadme.sh
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.github/
