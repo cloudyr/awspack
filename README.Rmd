@@ -19,10 +19,10 @@ install.packages("awspack", repos = c(cloudyr = "http://cloudyr.github.io/drat",
 Or, to pull a potentially unstable version directly from GitHub:
 
 ```R
-if (!require("ghit")) {
-    install.packages("ghit")
+if (!require("remotes")) {
+    install.packages("remotes")
 }
-ghit::install_github("cloudyr/awspack")
+remotes::install_github("cloudyr/awspack")
 ```
 
 ---
