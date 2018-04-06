@@ -22,4 +22,5 @@ Imports:
     aws.ses,
     aws.sns,
     aws.sqs,
-    aws.transcribe
+    aws.transcribe,
+    aws.translate
