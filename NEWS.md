@@ -1,3 +1,11 @@
+# awspack 0.1.9
+
+* Added **aws.comprehend**.
+
+# awspack 0.1.8
+
+* Added **aws.translate**.
+
 # awspack 0.1.7
 
 * Added **aws.transcribe**.
