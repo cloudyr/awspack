@@ -17,6 +17,7 @@ Imports:
     aws.comprehend,
     aws.efs,
     aws.iam,
+    aws.kms,
     aws.lambda,
     aws.polly,
     aws.s3,

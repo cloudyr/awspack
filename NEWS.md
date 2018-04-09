@@ -1,3 +1,7 @@
+# awspack 0.1.10
+
+* Added **aws.kms**.
+
 # awspack 0.1.9
 
 * Added **aws.comprehend**.
