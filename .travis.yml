@@ -38,10 +38,10 @@ r_github_packages:
 - cloudyr/aws.transcribe
 - cloudyr/aws.translate
 after_success:
-- Rscript -e 'library("covr");codecov()'
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash
-  drat.sh
+- R -q -e 'library("covr");codecov()'
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && test
+  $DRAT_DEPLOY == "true" && bash drat.sh
+- R -q -e "travisci::restart_last_build('cloudyr/awspack')"
 env:
   global:
-  - secure: L4JrOLHCWjPJoWNhc1u69c2iW8q58RmTwJ+h1ASmB9ocRna+4tP6WZTI6gSx/awJFsxZj79zDNCmBNOeUrqsh0uHrbfww6E6rMJrRcCmLT1UjJJqdNWAH0tQXpNsn4BxiJNtI5GZ6PEGOLDcveFx1jwXEm/n9W80GWFDyh3mvCWr1rmLzlIIayf4WhCUpsXqZeJFa4nijvFeki8N/HGpTk682W3wmNzdFFYkUl58S5dG3sq6hR3HLjMvo93niVfgo/oXCkVh2bQAgatiuA/dlJ8L2SpRT5qyH3zIojJtmBb+dUOT1nlfFJThQXKYjQj8w30YDydBHOt1zdP1Iy7ObgrYCRObiFDl8VcZfTCP+rhjgjfsxE7pWCPkGPXWGL17R1ssJvPu1+9HLFP+SUn6RbEuUOa+q9xVXnfI8d1esqezWgTUodvaku1MctDwi90ouiKSrrEuCXpGWzUe7vn7ENuXZhF2v0uzgqsOl6wIEfcH7p2obn25b3rtJulQ3JLPSZzYczQFSKjjz9XzW2ncav2SDo8b1DcjsEtiMmYn5SKX+9aOFA556LECgzAnJVOB4x5Nz54kAf7cNyGr0cwDLCvt0wh4OG+w5vCVqtuQ0Q/xWlyyOtWL0M9wQVTBg9MyeiVBdHXFQf6v4VFTDVDajSzyNnqAr0mBwRyWNn5290g=
-  - secure: v1jW5nuYMJJFj4KciKRrhEOpChDM+fkJYq8JRXU0JRQtAW02RJpH4lpPqU1oQ5lh7WjDwP5lInHOhWJjQYZKFhgXNnqCQ9pkjhoVJYR6TxzoFmnrnPItjY913Ob4g5iHDmxjoFX5ziFP1Gnts5Rfizyypx31KCGDTOMbw6U2vkWo93jDZLrYo3+Zu6CBSA3bsFSNZlO36IY0GRFMoPWI17WqFJNbmWWlmG1C/NZ+XLKRlFe7G1LVvxR2K2BkhzvVGdUdET4BvfblOQJ54pA94WeQt/hOFPE2q6uZ+QbxmMiXISH823O3tL21yXSVDp/376bzxs7WBk4c0iFhWmG0+PzjrDUHwQsxBPkOKynLeVdPJw9+ZljyTkSNXrA3/w0Sd+XcVem6xyn3S0hl+DdxdNr/WndcYDjSB7a7hGXjCsT4ucGK4/T86txXuoU3O7hl1adouDpOzqWJZ0wzQsnwtaMm9OFxVxiNI/t1amW0A7jC93B465YkXhgDt6KmwOMewa8xbknOFw64A4Apbla/HB7H4e65YY1/9yzrCsaOultqDwBXRRQg4FBD/45obP//15YGQ/U8Y4S8gnmBC0Y0QxU3HC/2f5sB38Jy+fJJbcnR5K7uVE2Cd9yCT0MVXyFZMZXqc3eaiax0ZXMkFPsVJjwGtx1sqKhzO0KvVxEMr4M=
+    secure: L2DsddmeuyT+mVm29ukXuHBsPW4Cz3jvMBYzCe/NaJ4s2q5LF6O7yas709mR7lx7NfnZY8l2r7JDzuYciLDRdWDlc7t6HFj+Ffs3xYmnoZdXLnVFmxYPBMkYeUivrNLMAqV1tzm4x3eL88PeUYow6LzX29vSiNMxHbJFTud6w2IuFEps26HrVLajGW5zUicWc0P6+qagdPbJ0/RfWHgesCZICTvKA1MyqaKcviLZtzKsE/SF+6OwrAs2YUpLSYO69bgg5a7WwK4XyXOIrjOpJo//CKnJgN3eAa87CBiIvMtb51NrN6YvN8T/c+u/uVykJEA1WbSPX5eyG0KuQSNNpBAYX15dxBqkHC2jEc3xIz2kBk+GKUw/oOifH6TQeBC5kT7CC4EtC32YIVuQulz2AbhQH1Ij430VRPy2HPYDwkQfNSNPxr+Fe/rZiDCjM66EmwSoaTUQ/wuSV/X8I+WiSz0vjnL2ss1P2Vmn8HIxgl9ERoe6AAmCmd5IbA2+QJKJbB4hmFhELLWewMXYVvsOEFgcKfcNFClM2knMwCRGF4hyMe3Ibr39K3qf3BjKiv/VskVI+jdHhP5XFyOA83DFG/sePgE+FBHvAKFbkmxqDfcsfxXqzevMLST3vpTw/DIbo/JHAk7nNnvZiKTAdcVO1zNShAWJZ9l+pLUXeQinxDM=

@@ -4,7 +4,8 @@ Title: Amazon Web Services Bundle Package
 Version: 0.1.9
 Date: 2018-04-09
 Authors@R: c(person("Thomas J.", "Leeper", role = c("aut", "cre"),
-                    email = "thosjleeper@gmail.com"))
+                    email = "thosjleeper@gmail.com",
+                    comment = c(ORCID = "0000-0003-4097-6326")))
 Description: A bundle of all of 'cloudyr' project <http://cloudyr.github.io/> packages for Amazon Web Services ('AWS') <https://aws.amazon.com/>. It depends upon all of the 'cloudyr' project's 'AWS' packages. It is mainly useful for installing the entire suite of packages; more likely than not you will only want to load individual packages one at a time.
 License: GPL (>= 2)
 URL: https://github.com/cloudyr/awspack
