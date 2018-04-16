@@ -41,7 +41,6 @@ after_success:
 - R -q -e 'library("covr");codecov()'
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && test
   $DRAT_DEPLOY == "true" && bash drat.sh
-- R -q -e "travisci::restart_last_build('cloudyr/awspack')"
 env:
   global:
     secure: L2DsddmeuyT+mVm29ukXuHBsPW4Cz3jvMBYzCe/NaJ4s2q5LF6O7yas709mR7lx7NfnZY8l2r7JDzuYciLDRdWDlc7t6HFj+Ffs3xYmnoZdXLnVFmxYPBMkYeUivrNLMAqV1tzm4x3eL88PeUYow6LzX29vSiNMxHbJFTud6w2IuFEps26HrVLajGW5zUicWc0P6+qagdPbJ0/RfWHgesCZICTvKA1MyqaKcviLZtzKsE/SF+6OwrAs2YUpLSYO69bgg5a7WwK4XyXOIrjOpJo//CKnJgN3eAa87CBiIvMtb51NrN6YvN8T/c+u/uVykJEA1WbSPX5eyG0KuQSNNpBAYX15dxBqkHC2jEc3xIz2kBk+GKUw/oOifH6TQeBC5kT7CC4EtC32YIVuQulz2AbhQH1Ij430VRPy2HPYDwkQfNSNPxr+Fe/rZiDCjM66EmwSoaTUQ/wuSV/X8I+WiSz0vjnL2ss1P2Vmn8HIxgl9ERoe6AAmCmd5IbA2+QJKJbB4hmFhELLWewMXYVvsOEFgcKfcNFClM2knMwCRGF4hyMe3Ibr39K3qf3BjKiv/VskVI+jdHhP5XFyOA83DFG/sePgE+FBHvAKFbkmxqDfcsfxXqzevMLST3vpTw/DIbo/JHAk7nNnvZiKTAdcVO1zNShAWJZ9l+pLUXeQinxDM=
