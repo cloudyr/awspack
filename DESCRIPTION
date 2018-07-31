@@ -1,8 +1,8 @@
 Package: awspack
 Type: Package
 Title: Amazon Web Services Bundle Package
-Version: 0.1.9
-Date: 2018-04-09
+Version: 0.1.10
+Date: 2018-07-31
 Authors@R: c(person("Thomas J.", "Leeper", role = c("aut", "cre"),
                     email = "thosjleeper@gmail.com",
                     comment = c(ORCID = "0000-0003-4097-6326")))
@@ -16,6 +16,7 @@ Imports:
     aws.alexa,
     aws.cloudtrail,
     aws.comprehend,
+    aws.ec2,
     aws.efs,
     aws.iam,
     aws.kms,
